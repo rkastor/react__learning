@@ -1,10 +1,10 @@
 
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Home  from '../pages/home'
-import page1 from '../pages/page1'
-import page2 from '../pages/page2'
-import page3 from '../pages/page3'
+import Home from '../../pages/home'
+import page1 from '../../pages/page1'
+import page2 from '../../pages/page2'
+import page3 from '../../pages/page3'
 
 
 

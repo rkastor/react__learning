@@ -39,8 +39,9 @@
     padding: 10px 0;
     display: inline-block;
     text-decoration: none;
-    transition: .2s;
+    transition: opacity .2s ease, color .2s ease;
 }
 .header ul a:hover {
     opacity: .7;
+    color: red
 }

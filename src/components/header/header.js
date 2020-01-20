@@ -1,29 +1,12 @@
 import React from 'react';
-import './header.css'; 
+import './header.css';
+import { Link } from "react-router-dom";
 import logo from './logo.svg'; 
 
 // localization area
 // import LocalizedStrings from 'react-localization';
 // import {localiz} from './locale.js';
 // let resources = new LocalizedStrings({localiz});
-
-class menuItemElement extends React.Component {
-
-    static menuItem = [
-        {
-            name: 'меню',
-            url: '1'
-        },
-        {
-            name: 'меню',
-            url: '2'
-        },
-        {
-            name: 'меню',
-            url: '3'
-        },
-    ];
-}; 
 
 class HeaderLogo extends React.Component {
     
@@ -44,12 +27,17 @@ class MenuNav extends React.Component {
 
   render() {
     return (
+
         <ul className="nav">
-            {menuItemElement.menuItem.map((item, index ) => 
-                <li key={index}>
-                    <a href={item.url}>{item.name + '-' + (index + 1)}</a>
-                </li>
-            )}
+            <li>
+                <Link to="/">Home</Link>
+            </li>
+            <li>
+                <Link to="/page1">About</Link>
+            </li>
+            <li>
+                <Link to="/page2">Topics</Link>
+            </li>
         </ul>
     );
   } 
