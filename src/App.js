@@ -3,14 +3,13 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import HeaderBlock from './components/header/header';
 import Main from './components/main/main';
+import "./App.sass"
 
 function App() {
   return (
     <Router>
-      <div className="">
+      <div className="wrapper">
         <HeaderBlock link={Link}/>
-
-        <hr />
 
         <Main />
       </div>
