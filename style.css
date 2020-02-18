@@ -1,0 +1,39 @@
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: 40px auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.contact__img {
+    flex: 0 auto;
+    max-width: 60px;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact__desc {
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.contact_name {
+    margin-bottom: 1px;
+}
+
+.contact_name,
+.contact_phone {
+    width: 100%;
+    display: block;
+}
